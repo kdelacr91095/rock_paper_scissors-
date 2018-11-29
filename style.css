@@ -1,0 +1,153 @@
+ul {
+    margin:0px;
+    padding:0px;
+}
+.flex-container {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin:20px;
+}
+
+.game-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width:300px;
+    margin:0px auto;
+}
+
+.game-buttons > button {
+    padding:10px;
+    background:transparent;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 2px rgba(0,0,0,.20);
+    color: rgba(0,0,0,.27);
+    border-radius: 50%;
+    width:5rem;
+    height:5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.game-buttons > button:hover {
+    box-shadow: 3px 3px 2px rgba(0,0,0,.60);
+    color:rgba(135, 16, 165, 0.4);
+    border: 1px solid  rgba(135, 16, 165, 0.4);
+    transition: all 0.5s;
+}
+
+.game-buttons > button:active {
+  transform: translateY(4px);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.60);
+  transition:all 0.1s;
+  color: rgb(0, 105, 44, 0.425);
+  border: 1px solid  rgba(0, 105, 44, 0.425);;
+}
+
+.reset {
+
+    background:transparent;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 2px rgba(0,0,0,.20);
+    color: rgba(0,0,0,.27);
+    width:6rem;
+    height:2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    outline: none;
+    transition:all 1s;
+
+}
+
+.actionAdd {
+    transition:all 1s;
+    display:block;
+}
+
+
+.hide {
+    display:none;
+
+}
+.fade {
+    -webkit-animation: fade 900ms;
+    animation: fade 900ms;
+    opacity: 1;
+    transform: none;
+ }
+
+ @-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+    from {transform: translateX(-100%)}
+    to{transform: none}
+}@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+    from {transform: translateX(-100%)}
+    to{transform: none}
+}
+.show {
+    display:block;
+}
+.reset:hover {
+    box-shadow: 3px 3px 2px rgba(0,0,0,.60);
+    color:rgba(135, 16, 165, 0.4);
+    border: 1px solid  rgba(135, 16, 165, 0.4);
+    transition: all 0.5s;
+}
+
+.reset:active {
+  transform: translateY(4px);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.60);
+  transition:all 0.1s;
+  color: rgba(135, 16, 165, 0.4);
+  border: 1px solid  rgba(135, 16, 165, 0.4);;
+}
+
+
+.results {
+    padding: 20px;
+    width: 50%;
+    min-width:300px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+.resultLists > li {
+    list-style: none;
+    text-align: center;
+    padding:10px;
+    border:1px solid #ccc;
+    margin:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.40);
+    box-shadow: 3px 3px 2px rgba(0,0,0,.10);
+    border-radius: 10px;
+   
+}
+
+.title {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(135, 16, 165, 0.4);
+}
+
+
+.totalResultLists > li {
+    list-style: none;
+    text-align: center;
+    padding:40px;
+    border:1px solid rgba(135, 16, 165, 0.4);
+    margin:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(135, 16, 165, 0.4);
+    box-shadow: 3px 3px 2px rgba(0,0,0,.10);
+    border-radius: 10px;
+}
+.footer{
+    color: rgba(135, 16, 165, 0.4);
+}

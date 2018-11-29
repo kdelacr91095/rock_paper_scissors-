@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <script text="text/javascript" src="game.js">
-  game();
-  </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Janken!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+        crossorigin="anonymous">
+    <script src="game.js"></script>
 </head>
+
 <body>
-  <button onclick="game()">Play!</button>
+
+    <div class="flex-container title"><span>ROCK PAPER SCISSORS </div>
+    <div class="flex-container game-buttons">
+        <button class="buttons" onclick="playRound(this); roundChange();" data-hand="1" id="Rock"><i class="fal fa-hand-rock fa-3x"></i></button>
+        <button class="buttons" onclick="playRound(this); roundChange();" data-hand="2" id="Paper"><i class="fal fa-hand-paper fa-3x"></i></button>
+        <button class="buttons" onclick="playRound(this); roundChange();" data-hand="3" id="Scissors"><i class="fal fa-hand-scissors fa-3x"></i></button>
+    </div>
+    <div class="flex-container"><button id="reset" onclick="resetGame();" class="reset"> Play Again ? </button></div>
+   
+    <div class="flex-container">
+
+
+        <div id="results" class="results">
+            <ul id="totalResultLists" class="totalResultLists">
+
+            </ul>
+            <ul id="resultLists" class="resultLists">
+
+            </ul>
+        </div>
+
+    </div>
+    <footer class = "footer">
+    <div class="flex-container">
+    <span>Krishel Dela Cruz</span>
+    </div>
+</footer>
+    <script>
+ 
+    </script>
 </body>
+
 </html>
